@@ -27,6 +27,9 @@ function mnml_autop( $c ) {
 	$c = preg_replace( "/(\n|\]|>)\n+([^\n\[<])/", "$1\n<p>$2", $c );// opening <p>
 	$c = preg_replace( "/([^\n\]>])\n+?(\n|\[|<)/", "$1</p>\n$2", $c );// closing </p>
 	$c = preg_replace( "/([^\n\]>])\n([^\n\[<])/", "$1<br>$2", $c );// <br>
+	
+	//Let's try to keep double spacing!
+	$c = str_replace( ".  ", ".&nbsp; ", $c );
 	return $c;
 }
 
