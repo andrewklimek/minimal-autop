@@ -3,7 +3,7 @@
 Plugin Name: Minimal AutoP
 Plugin URI:  https://github.com/andrewklimek/minimal-autop/
 Description: very simple replacement for wpautop, won't interfere with your html.
-Version:     0.1
+Version:     0.1.0-beta
 Author:      Andrew J Klimek
 Author URI:  https://readycat.net
 License:     GPL2
