@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: Minimal AutoP
+Plugin URI:  https://github.com/andrewklimek/minimal-autop/
 Description: very simple replacement for wpautop, won't interfere with your html.
 Version:     0.1
 Author:      Andrew J Klimek
