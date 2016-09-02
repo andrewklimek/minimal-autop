@@ -3,7 +3,7 @@
 Plugin Name: Minimal AutoP
 Plugin URI:  https://github.com/andrewklimek/minimal-autop/
 Description: very simple replacement for wpautop, won't interfere with your html.
-Version:     0.1.0-beta
+Version:     0.1.1
 Author:      Andrew J Klimek
 Author URI:  https://readycat.net
 License:     GPL2
@@ -26,7 +26,7 @@ function mnml_autop( $c ) {
 	$c = str_replace( array( "\r\n", "\r" ), "\n", $c );// standardize line breaks
 	$c = str_replace( array( "\n<br>", "<br>\n" ), "<br>", $c );// trim line breaks from any <br>s they might code
 	$c = preg_replace( "/(\n|\]|>)\n+([^\n\[<])/", "$1\n<p>$2", $c );// opening <p>
-	$c = preg_replace( "/([^\n\]>])\n+?(\n|\[|<)/", "$1</p>\n$2", $c );// closing </p>
+	// $c = preg_replace( "/([^\n\]>])\n+?(\n|\[|<)/", "$1</p>\n$2", $c );// closing </p>
 	$c = preg_replace( "/([^\n\]>])\n([^\n\[<])/", "$1\n<br>$2", $c );// <br>
 	
 	//Let's try to keep double spacing!
