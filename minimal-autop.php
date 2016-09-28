@@ -23,6 +23,8 @@ Minimal AutoP. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 
 function mnml_autop( $c ) {
 	
+	$c = "\n\n{$c}";
+	
 	// not sure if we need to standardize line breaks. wp_autop does.
 	// Maybe if entries were made on a different OS than current server?
 	// And would Darwin \r ever still show up??
