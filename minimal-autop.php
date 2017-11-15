@@ -5,7 +5,7 @@ Plugin URI:  https://github.com/andrewklimek/minimal-autop/
 Description: very simple replacement for wpautop, won't interfere with your html.
 Version:     0.1.2
 Author:      Andrew J Klimek
-Author URI:  https://readycat.net
+Author URI:  https://github.com/andrewklimek
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
